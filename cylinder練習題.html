@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>VR360</title>
+    <script src="https://aframe.io/releases/1.0.4/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+      <!--圓錐-->
+      <a-entity geometry="primitive: cone;" position="1 0 -3"></a-entity>
+      <!--圓柱-->
+      <a-entity geometry="primitive: cylinder; " position="3 0 -3"></a-entity>
+      <!--圓柱外圈-->
+      <a-entity geometry="primitive: cylinder; thetaLength=180;" material=" color: #dd2727" position="5 0 -3"></a-entity>
+      <!--半個圓柱外圈-->
+      <a-entity geometry="primitive: cylinder; "
+          material=" color: red;" position="-3 0 -3"></a-entity> 
+      <!--六個邊的柱體-->
+      <a-entity geometry="primitive: cylinder; " position="-5 0 -3" shadow="receive: true" material="color:blue"></a-entity>
+
+    </a-scene>
+  </body>
+</html>
