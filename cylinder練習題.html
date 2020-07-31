@@ -8,11 +8,11 @@
   <body>
     <a-scene>
       <!--圓錐-->
-      <a-entity geometry="primitive: cone;" position="1 0 -3"></a-entity>
+      <a-entity geometry="primitive: cone;" material="side: double; color: #dd2727;" position="1 0 -3"></a-entity>
       <!--圓柱-->
-      <a-entity geometry="primitive: cylinder; " position="3 0 -3"></a-entity>
+      <a-entity geometry="primitive: cylinder; openEnded= true" position="3 0 -3"></a-entity>
       <!--圓柱外圈-->
-      <a-entity geometry="primitive: cylinder; thetaLength=180;" material=" color: #dd2727" position="5 0 -3"></a-entity>
+      <a-entity geometry="primitive: cylinder; openEnded= true; thetaLength: 180;" material="side: double; color: #dd2727" position="5 0 -3"></a-entity>
       <!--半個圓柱外圈-->
       <a-entity geometry="primitive: cylinder; "
           material=" color: red;" position="-3 0 -3"></a-entity> 
